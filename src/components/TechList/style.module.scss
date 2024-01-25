@@ -1,0 +1,86 @@
+.list {
+    border-radius: 4px;
+    background: #212529;
+    padding: 20px;
+    width: 72%;
+}
+
+.divButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    border-radius: 4px;
+    background: #121214;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22.22px 0 22.22px;
+    margin: 10px 0 10px 0;
+
+    h1 {
+        font-size: 14.21px;
+        font-weight: 700;
+    }
+}
+
+.editCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+    p {
+        color: #868E96;
+        font-size: 12.182px;
+        font-weight: 400;
+    }
+}
+
+.editButton {
+    background: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+}
+
+@media(max-width: 426px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    
+
+    .editCard {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+
+        div {
+            button {
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+
+    .list {
+        width: 90%;
+    }
+}

@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.containerHeader {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    width: 74%;
+    padding-bottom: 20px;
+}
+
+
+
+.buttonLogout {
+    height: 32px;
+    padding: 0px 16.243px;
+    border-radius: 4px;
+    background: var(--grey-3, #212529);
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+
+
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        width: 70vw;
+
+    }
+
+    color: white;
+}
+
+
+.pGrey {
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #868E96;
+    width: 100vw;
+    max-width: 250px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 67%;
+    max-width: 1000px;
+}
+
+.p {
+    weight: 400;
+    size: 16px;
+    width: 90vw;
+    max-width: 1000px;
+}
+
+
+.containerUser {
+    border-bottom: 1px solid #212529;
+    border-top: 1px solid #212529;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.techOpenModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 74.5%;
+
+    button {
+        cursor: pointer;
+        width: 32.485px;
+        height: 32px;
+        border: none;
+        background: none;
+    }
+
+}
+
+@media(max-width: 426px) {
+    .techOpenModal {
+        width: 100%;
+    }
+    .user {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .containerHeader {
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+
+}
