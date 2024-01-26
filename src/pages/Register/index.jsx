@@ -3,13 +3,13 @@ import { registerSchema } from "../../schemes/registerSchema"
 import { Input } from "../../components/Input"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Link } from "react-router-dom"
-import styles from "./style.module.sass"
+import styles from "./style.module.scss"
 import { Select } from "../../components/Select"
 import { toast } from "react-toastify"
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useContext } from "react"
-import { UserContext } from "../../components/providers/UserContext"
+import { UserContext } from "../../providers/UserContext"
 
 
 

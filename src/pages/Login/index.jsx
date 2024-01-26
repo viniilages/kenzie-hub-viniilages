@@ -1,9 +1,9 @@
 import { useForm } from "react-hook-form"
 import { Input } from "../../components/Input"
 import { Link } from "react-router-dom"
-import styles from "./style.module.sass"
+import styles from "./style.module.scss"
 import { useContext } from "react"
-import { UserContext } from "../../components/providers/UserContext"
+import { UserContext } from "../../providers/UserContext"
 
 export const Login = () => {
 

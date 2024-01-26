@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { useForm } from "react-hook-form"
-import { TechContext } from "../providers/TechContext"
+import { TechContext } from "../../providers/TechContext"
 import { Input } from "../Input"
 import { Select } from "../Select"
 import styles from "./style.module.scss"

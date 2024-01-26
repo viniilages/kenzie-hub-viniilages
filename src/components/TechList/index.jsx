@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { TechContext } from "../providers/TechContext"
+import { TechContext } from "../../providers/TechContext"
 import styles from "./style.module.scss"
 import buttonEditLogo from "/public/assets/img/Button Edit.svg"
 import buttonDeleteLogo from "/public/assets/img/Button Delete.svg"

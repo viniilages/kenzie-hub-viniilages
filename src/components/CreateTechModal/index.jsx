@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form"
 import { Input } from "../Input"
 import { Select } from "../Select"
 import { useContext } from "react"
-import { TechContext } from "../providers/TechContext"
+import { TechContext } from "../../providers/TechContext"
 import styles from "./style.module.scss"
 
 export const CreateTechModal = () => {

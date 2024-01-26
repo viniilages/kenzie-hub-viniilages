@@ -1,11 +1,12 @@
 import styles from "./style.module.scss"
 import { useContext } from "react"
-import { UserContext } from "../../components/providers/UserContext"
-import { TechContext } from "../../components/providers/TechContext"
+import { UserContext } from "../../providers/UserContext"
+import { TechContext } from "../../providers/TechContext"
 import { CreateTechModal } from "../../components/CreateTechModal"
 import { TechList } from "../../components/TechList"
 import { EditTechModal } from "../../components/EditTechModal"
 import buttonPlusLogo from "/public/assets/img/Button Plus.svg"
+import { ToastContainer } from "react-toastify"
 export const Home = () => {
 
     const { logout, user } = useContext(UserContext)
@@ -43,6 +44,7 @@ export const Home = () => {
                 
                 {editingTech ? <EditTechModal/> : null}
                 {createModal ? <CreateTechModal /> : null}
+                <ToastContainer/>
             </main>
         </>
     )

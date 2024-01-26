@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { UserContext } from "./UserContext";
-import { api } from "../../api/api";
+import { api } from "../api/api";
+import { toast } from "react-toastify";
 
 export const TechContext = createContext({})
 
@@ -10,7 +11,7 @@ export const TechProvider = ({ children }) => {
 
     const [createModal, setCreateModal] = useState(false)
 
-    const [editingTech, setEditingTech] = useState()
+    const [editingTech, setEditingTech] = useState(false)
 
     const submitEditTech = async (formData) => {
         const token = localStorage.getItem("userToken")
@@ -23,6 +24,8 @@ export const TechProvider = ({ children }) => {
             const techFilter = techReading.filter(tech => tech.id !== editingTech.id)
 
             setTechReading([...techFilter, data])
+            toast.success("Tecnologia editada com sucesso!", { theme: "#343B41" })
+            setEditingTech(false)
         }
         console.log(data)
     }
@@ -56,7 +59,8 @@ export const TechProvider = ({ children }) => {
 
             if (data) {
                 setTechReading([...techReading, data])
-                console.log(techReading)
+                toast.success("Tecnologia adicionada com sucesso!", { theme: "#343B41" })
+                setCreateModal(false)
             }
         } catch (error) {
             console.log(error)
