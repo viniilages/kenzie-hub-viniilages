@@ -1,7 +1,7 @@
-import { createContext, useContext, useState } from "react";
-import { UserContext } from "./UserContext";
-import { api } from "../api/api";
-import { toast } from "react-toastify";
+import { createContext, useContext, useState } from "react"
+import { UserContext } from "./UserContext"
+import { api } from "../api/api"
+import { toast } from "react-toastify"
 
 export const TechContext = createContext({})
 
