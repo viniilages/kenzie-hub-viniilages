@@ -1,5 +1,5 @@
-import { TechProvider } from "./components/providers/TechContext"
-import { UserProvider } from "./components/providers/UserContext"
+import { TechProvider } from "./providers/TechContext"
+import { UserProvider } from "./providers/UserContext"
 import { RoutesMain } from "./routes/RoutesMain"
 
 
